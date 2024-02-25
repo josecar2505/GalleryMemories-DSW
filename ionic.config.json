@@ -1,0 +1,7 @@
+{
+  "name": "GalleryMemories",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
