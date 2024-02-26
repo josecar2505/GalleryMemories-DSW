@@ -1,0 +1,32 @@
+<ion-content class="container-login100">
+  <div class="wrap-login100">
+    <ion-title class="login100-form-title">BIENVENIDO</ion-title>
+    <div class="imagen-container">
+      <img src=" {{ Imagen }}" alt="" class="estilo-imagenlogin" />
+    </div>
+    <ion-title class="login100-form-title">GALLERY MEMORIES</ion-title>
+    <!-- (submit)="functAutenticacion()" -->
+    <form [formGroup]="loginForm" class="login100-form">
+      <!-- Textfield usuario-->
+      <ion-item>
+        <ion-input formControlName="email" placeholder="Correo electrónico"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <!-- Textfield contraseña-->
+      <ion-item>
+        <ion-input formControlName="password" type="password" placeholder="Contraseña"></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+      <br>
+      <div class="forgotPassword">
+        <a [routerLink]="['/reset-password']" class="">Olvide mi contraseña</a>
+      </div>
+      <ion-button shape="round"(click)="login()">INICIAR SESIÓN</ion-button>
+    </form>
+
+    <div class="text-center">
+      <h4 class="texto">¿No tienes una cuenta?</h4>
+      <button ion-button class="btn btn-link btn-register" [routerLink]="['/signup']">Registrate</button>
+    </div>
+  </div>
+</ion-content>

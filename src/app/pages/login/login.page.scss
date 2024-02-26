@@ -1,0 +1,110 @@
+ion-content {
+  height: 100%;
+  --ion-background-color: transparent; /* Para que no haya un color de fondo por defecto */
+}
+
+.container-login100 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  background: linear-gradient(to right bottom, #cad7db, #1c87cf); /* Aquí puedes definir tu gradiente de fondo */
+}
+
+.wrap-login100 {
+  width: 90%; /* Modifica el ancho según tus necesidades */
+  max-width: 500px; /* Evita que el formulario sea demasiado ancho en pantallas grandes */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px; /* Añade un espacio alrededor del formulario */
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center; /* Centra horizontalmente */
+}
+
+.estilo-imagenlogin {
+  height: 120px;
+  width: 120px;
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.caja-texto {
+  background-color: #cccccc40;
+  border-color: slategray;
+  border-radius: 30px;
+  width: 100%;
+  padding: 15px;
+  border-width: 0;
+  margin-bottom: 20px;
+}
+
+.caja-texto:focus {
+  outline: 1px solid cornflowerblue;
+  box-shadow: 0 0 10px cornflowerblue;
+}
+
+.btnform {
+  background-color: #0d6efb;
+  text-transform: uppercase;
+  border-radius: 30px;
+  width: 85%;
+  height: 50px;
+  padding: 15px;
+  border-width: 0;
+  margin-bottom: 20px;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  font-family: Poppins-Medium;
+}
+
+.login100-form-title {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.p-b-49 {
+  padding-bottom: 49px;
+}
+
+.texto {
+  font-size: 20px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 5px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.login100-form {
+  padding: 0 25px;
+}
+
+.forgotPassword{
+  display: flex;
+  justify-content: flex-end;
+  a{
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+}
+
+.btn-register {
+  background-color: #ffffff;
+  color: #0094f7;
+  border-bottom: #1c87cf 0.5px solid;
+}

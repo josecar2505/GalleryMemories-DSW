@@ -1,0 +1,37 @@
+<ion-content class="container-login100">
+  <div class="wrap-login100">
+    <span class="login100-form-title">REGISTRO</span>
+    <div class="imagen-container">
+      <img src=" {{ Imagen }}" alt="" class="estilo-imagenlogin" />
+    </div>
+    <!-- (submit)="functAutenticacion()" -->
+    <form [formGroup]="regForm" novalidate class="login100-form">
+      <!-- Textfield usuario-->
+      <ion-item>
+        <ion-input formControlName="name" placeholder="Nombre"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input formControlName="email" placeholder="Correo electrónico"></ion-input>
+        <ion-icon name="mail-outline"></ion-icon>
+      </ion-item>
+      
+      <!-- Textfield contraseña-->
+      <ion-item>
+        <ion-input formControlName="password" type="password" placeholder="Contraseña"></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input formControlName="confirmPassword" type="password" placeholder="Confirmar contraseña"></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+       <br>
+      <ion-button shape="round"(click)="signup()">Registrarse</ion-button>
+    </form>
+
+    <div class="text-center">
+      <h4 class="texto">¿Ya tienes una cuenta?</h4>
+      <button ion-button class="btn btn-link btn-login" [routerLink]="['/login']">Iniciar Sesión</button>
+    </div>
+  </div>
+</ion-content>
